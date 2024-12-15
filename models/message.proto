@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package models;
 
-option go_package = ".";
+option go_package = "github.com/Ddarli/utils/models";
 
 message CheckExistRequest {
   string id = 1;
