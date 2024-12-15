@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package models;
+
+option go_package = ".";
+
+message CheckExistRequest {
+  string id = 1;
+}
+
+message CheckExistResponse {
+  bool exist = 1;
+}
+
+message PaymentRequest {
+  string name = 2;
+  int32 amount = 3;
+}
+
+message PaymentResponse {
+  string id = 1;
+  bool success = 2;
+}
