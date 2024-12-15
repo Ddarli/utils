@@ -65,7 +65,6 @@ func NewClient(cfg ClientConfig) *kafkaClient {
 		config.Consumer.Return.Errors = true
 
 		config.Consumer.Offsets.AutoCommit.Enable = cfg.Consumer.AutoCommit
-		//config.Consumer.Offsets.AutoCommit.Interval = cfg.Consumer.AutoCommitInterval.Duration
 	}
 
 	saramaCli, err := sarama.NewClient(cfg.Brokers, config)
