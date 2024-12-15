@@ -20,7 +20,7 @@ func (kc *EventsHandler) Setup(_ sarama.ConsumerGroupSession) error {
 
 func (kc *EventsHandler) Cleanup(session sarama.ConsumerGroupSession) error {
 	session.Commit()
-
+	////wtfffff
 	return nil
 }
 
