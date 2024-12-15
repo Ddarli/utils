@@ -21,3 +21,13 @@ message PaymentResponse {
   string id = 1;
   bool success = 2;
 }
+
+message Product {
+  string id = 1;
+  string name = 2;
+  float price = 3;
+}
+
+message ProductListResponse {
+  repeated Product products = 1;
+}
